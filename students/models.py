@@ -8,7 +8,7 @@ class Student(models.Model):
     number = models.CharField(verbose_name="отчество", max_length=10)
     birthday = models.DateField(verbose_name="дата рождения", blank=True, null=True)
 
-    def __str__(self) -> str:
+    def str(self) -> __str__:
         result = f"{self.last} {self.first_name[0]}."
         if self.second_name:
             result += f"{self.second_name[0]}."
